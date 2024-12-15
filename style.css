@@ -1,0 +1,170 @@
+/* Definisi variabel warna */
+:root {
+    --darkGray: #2d3748; /* Warna abu-abu gelap */
+    --gray: #4a5568; /* Warna abu-abu */
+    --grayLight: #e2dcdc; /* Warna abu-abu muda */
+    --primary: #e0556c; /* Warna primer */
+}
+
+/* style dasar untuk body */
+body {
+    box-sizing: border-box;  /* Mengatur model kotak elemen menjadi border-box untuk memudahkan perhitungan dimensi */
+    padding: 0; /* Menghilangkan padding bawaan browser */
+    margin: 0; /* Menghilangkan margin bawaan browser */
+    font-family: "Inter", sans-serif; /* Font Inter */ /* Mengatur jenis font menjadi "Inter" jika tersedia, jika tidak menggunakan font sans-serif sebagai cadangan */
+}
+
+/* style untuk navbar */
+.navbar {
+    background: rgb(185, 225, 240); /* Mengatur latar belakang menjadi putih */
+    height: 85px; /* Mengatur tinggi navbar */
+    display: flex; /* Mengatur tampilan elemen navbar menjadi fleksibel */
+    padding: 0 10%; /* Mengatur padding di atas dan bawah navbar menjadi 0 dan di kiri dan kanan menjadi 10% dari lebar layar */
+    align-items: center; /* Menyusun item di dalam navbar secara vertikal tengah */
+    justify-content: space-between; /* Menyusun ruang di antara item di navbar secara horizontal dengan jarak yang sama di kiri dan kanan */
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1); /* Menambahkan bayangan bawah ke navbar */
+}
+
+/* style untuk gambar dalam navbar */
+.navbar img {
+    background: white; /* Mengatur latar belakang menjadi putih */
+    height: 60px; /* Mengatur tinggi elemen menjadi 60 piksel */
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    align-items: center; /* Mengatur penempatan item di dalam elemen secara vertikal tengah */
+    justify-content: space-between; /* Mengatur penempatan ruang di antara item di dalam elemen secara horizontal dengan jarak yang sama di kiri dan kanan */
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1); /* Menambahkan bayangan ke elemen dengan parameter bayangan yang ditentukan (offset-x offset-y blur-radius spread-radius warna) */
+}
+
+/* Style untuk judul dalam navbar */
+.navbar > h1 {
+    font-size: 20px; /* Ukuran font 20 piksel */
+    font-weight: bolder; /* Ketebalan font lebih tebal dari biasanya */
+}
+
+/* Kontainer awal */
+.awal-container {
+    display: flex; /* Mengatur tampilan kontainer menjadi fleksibel */
+    height: 470px; /* Tinggi kontainer 470 piksel */
+    padding: 0 10%; /* Padding kiri dan kanan 10% dari lebar kontainer */
+}
+
+/* Style untuk konten dalam kontainer awal */
+.awal-container > div {
+    width: 50%; /* Lebar elemen 50% dari lebar kontainer */
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    flex-direction: column; /* Menetapkan tata letak kolom untuk anak-anak elemen */
+    align-items: center; /* Penempatan elemen anak ke tengah secara vertikal */
+    justify-content: center; /* Penempatan elemen anak ke tengah secara horizontal */
+}
+
+/* Style untuk judul dalam kontainer awal */
+.awal-container h1 {
+    font-size: 45px; /* Ukuran font 60 piksel */
+    width: 250px; /* Lebar elemen 360 piksel */
+    margin: 20px 0; /* Margin atas dan bawah 20 piksel, margin samping 0 */
+    font-weight: bolder; /* Ketebalan font lebih tebal dari biasanya */
+}
+
+/* Style untuk paragraf dalam kontainer awal */
+.awal-container p {
+    font-size: 30px; /* Ukuran font 30 piksel */
+    color: var(--gray); /* Menggunakan warna abu-abu yang ditentukan */
+}
+
+/* Style untuk gambar dalam kontainer awal */
+.awal-container > img {
+    width: 20%; /* Lebar gambar 40% dari lebar kontainer */
+    height: 350px; /* Tinggi gambar 250 piksel */
+    align-self: CENTER ; /* Penempatan gambar sendiri ke tengah secara horizontal */
+}
+
+/* Kontainer deskripsi */
+.description-container {
+    height: 250px; /* Tinggi kontainer deskripsi 280 piksel */
+    margin: 20px 0; /* Margin atas dan bawah 40 piksel, margin samping 0 */
+    padding: 0 10%; /* Padding kiri dan kanan 10% dari lebar kontainer */
+    display: flex; /* Mengatur tampilan kontainer menjadi fleksibel */
+}
+
+/* Style untuk konten dalam kontainer deskripsi */
+.description-container > div {
+    width: 60%; /* Lebar elemen 60% dari lebar kontainer */
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    justify-content: center; /* Penempatan elemen ke tengah secara horizontal */
+    align-items: center; /* Penempatan elemen ke tengah secara vertikal */
+    flex-direction: column; /* Menetapkan tata letak kolom untuk anak-anak elemen */
+    box-shadow: 0px 4px 8px 0px rgba(8, 8, 8, 0.1); /* Menambahkan bayangan pada elemen */
+    border-top: 1px solid rgb(252, 250, 250); /* Menambahkan garis atas pada elemen */
+}
+
+
+/* Style untuk paragraf dalam kontainer deskripsi */
+.description-container p {
+    color: var(--darkGray); /* Menggunakan warna abu-abu yang ditentukan */
+}
+
+/* Style untuk gambar dalam kontainer deskripsi */
+.description-container > img {
+    width: 300px; /* Lebar gambar 40% dari lebar kontainer */
+    height: 250px;
+   
+}
+
+/* Style untuk bagian */
+section {
+    padding: 60px 0; /* Padding atas dan bawah 60 piksel, padding samping 0 */
+    overflow: hidden; /* Menyembunyikan overflow konten yang melebihi batas kotak */
+}
+
+/* Kontainer */
+.container {
+    height: 600px; /* Tinggi kontainer 600 piksel */
+    padding: 0 10%; /* Padding kiri dan kanan 10% dari lebar kontainer */
+    display: flex; /* Mengatur tampilan kontainer menjadi fleksibel */
+    margin: 40px 0; /* Margin atas dan bawah 40 piksel, margin samping 0 */
+}
+
+/* Style untuk judul dalam kontainer */
+.container h1 {
+    font-size: 60px; /* Ukuran font 60 piksel */
+}
+
+/* Style untuk paragraf dalam kontainer */
+.container p {
+    color: var(--gray); /* Menggunakan warna abu-abu yang ditentukan */
+    font-size: 16px; /* Ukuran font 16 piksel */
+}
+
+/* Style untuk konten dalam kontainer */
+.container > div {
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    justify-content: center; /* Penempatan elemen ke tengah secara horizontal */
+    align-items: center; /* Penempatan elemen ke tengah secara vertikal */
+    flex-direction: column; /* Menetapkan tata letak kolom untuk anak-anak elemen */
+    width: 48%; /* Lebar elemen 48% dari lebar kontainer */
+    background: rgb(225, 255, 89); /* Latar belakang kuning */
+    background: var(--grayLight); /* Latar belakang sesuai variabel yang ditentukan */
+}
+
+/* Style untuk gambar dalam kontainer */
+.container > img {
+    width: 52%; /* Lebar gambar 52% dari lebar kontainer */
+    background: red; /* Latar belakang merah */
+}
+
+/* Style untuk kaki */
+footer {
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    justify-content: space-between; /* Penempatan elemen-elemen dengan jarak yang sama di antara mereka */
+    align-items: center; /* Penempatan elemen ke tengah secara vertikal */
+    padding: 0 10%; /* Padding kiri dan kanan 10% dari lebar kontainer */
+    height: 80px; /* Tinggi footer 80 piksel */
+}
+
+
+
+/* Style untuk konten dalam kaki */
+footer > div {
+    display: flex; /* Mengatur tampilan elemen menjadi fleksibel */
+    gap: 30px; /* Jarak antara elemen-elemen 30 piksel*/
+}
